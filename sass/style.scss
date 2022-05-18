@@ -1,13 +1,13 @@
 /* global */
-$color-one: #ff9f1a;
-$color-two: #302d2d;
+$color-primary: #ff9f1a;
+$color-text: #302d2d;
 $color-three: #4b4b4b;
-$color-four: #ececec;
+$color-titles: #ececec;
 $color-five: #fff;
 $color-six: #646464;
-$color-seven: #f0f0f0;
+$color-background: #c5c5c5;
 
-$font-family: 'Abril Fatface', cursive;
+$font-family: 'Lobster', 'Abril Fatface', cursive;
 
 
 body {
@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: $font-family;
     color: $color-three; 
 }
 
@@ -46,7 +46,7 @@ body {
 
 .navigation a {
     text-decoration: none;
-    color: $color-four;
+    color: $color-titles;
 }
 
 /* splash */
@@ -60,13 +60,13 @@ body {
     text-decoration: none;
     cursor: pointer;
     border-width: 5px;
-    background-color: $color-four;
+    background-color: $color-titles;
     background-position: 100% 0;
     background-size: 300%;
 }
 
 .main-page {
-    height: 70vh;
+    min-height: 70vh;
     position: relative;
     background-image: url(https://i.postimg.cc/TYgf8S26/budynek.jpg);
     background-position: center center;
@@ -86,7 +86,7 @@ body {
     word-spacing: 4px;
     font-weight: normal;
     line-height: 1.2;
-    color: $color-four;
+    color: $color-titles;
     text-align: center;
     
 }
@@ -95,7 +95,7 @@ body {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    color: $color-one;
+    color: $color-primary;
 }
 
 /* Services */
@@ -106,11 +106,10 @@ body {
 
 .services i {
     font-size: 40px;
-    background: $color-five;
     width: 100px;
     height: 100px;
     line-height: 100px;
-    color: $color-one;
+    color: $color-primary;
     border-radius: 50%;
     border-style: solid;
 }
@@ -125,8 +124,8 @@ body {
 
 /* Portfolio */
 
-.PORTFOLIO {
-    background-color: $color-seven;
+.portfolio {
+    background-color: $color-background;
     margin: 100px 0 0 ;
     padding: 100px 0;
 }
@@ -167,7 +166,7 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    color: $color-four;
+    color: $color-titles;
     border-radius: 50%;
     flex: 0 0 33.333%;
 }
@@ -192,7 +191,6 @@ body {
     }
     
     .card {
-        background-color: $color-five;
         width: 100%;
         height: 400px;
     }
